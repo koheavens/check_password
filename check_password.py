@@ -8,5 +8,8 @@ while i > 0 :
         break
     else:
         i -= 1
-        print(f'密碼錯誤! 還有{i}次機會')
+        if i == 0:
+            break
+        else:
+            print(f'密碼錯誤! 還有{i}次機會')
 
